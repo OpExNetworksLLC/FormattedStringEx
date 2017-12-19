@@ -14,9 +14,11 @@ func formatLabel(string: String, title_color: UIColor, title_font_size: CGFloat,
     // If receiving a string value from UITextView, as in this example, we have to force insert the carriage
     // return since it sees the "\n" as just more characters instead of denoting a carriage return (CR). This
     // is just a good cleanup step to have in place so what was intended is what is actually in the string.
+    //
     let string = string.replacingOccurrences(of: "\\n", with: "\n")
     
-    //getting the range to separate the button title strings
+    // Getting the range to separate the button title strings
+    //
     let index = string.index(of: "\n") ?? string.endIndex
     let substring1 = String(string[..<index])
     let substring2 = String(string[index...])
