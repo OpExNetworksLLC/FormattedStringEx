@@ -21,6 +21,11 @@ Call the function:
         txtOutput.attributedText = formatAttribString(string: txtInput.text, title_color: UIColor.gray, title_font_size: 17, title_font_weight: UIFont.Weight.bold, subtitle_color: UIColor.lightGray, subtitle_font_size: 13)
     }
 
+Alternate using a literal string:
+
+    @IBAction func btnUpdate(_ sender: Any) {
+        txtOutput.attributedText = formatAttribString(string: “Title\nDescription of the title”, title_color: UIColor.gray, title_font_size: 17, title_font_weight: UIFont.Weight.bold, subtitle_color: UIColor.lightGray, subtitle_font_size: 13)
+    }
 
 The function:
 
@@ -67,5 +72,9 @@ The function:
    
          return combination
     }
+
+Screen shot of output:  
+
+![image](https://github.com/OpExNetworks/FormattedStringEx/blob/master/FormatAttribString%20Screen%20Shot.png)
 
 
