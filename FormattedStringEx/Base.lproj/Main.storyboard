@@ -6,7 +6,6 @@
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13772"/>
-        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
@@ -26,31 +25,16 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" text="Title\nSub Title" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="ZLF-tc-P0l">
-                                <rect key="frame" x="16" y="113" width="343" height="127"/>
-                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
-                            </textView>
-                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" text="output" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="CaR-hE-tHi">
-                                <rect key="frame" x="16" y="286" width="343" height="82"/>
+                                <rect key="frame" x="16" y="113" width="343" height="151"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <constraints>
-                                    <constraint firstAttribute="height" constant="82" id="eCS-Er-4sS"/>
-                                </constraints>
-                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
-                            </textView>
-                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" text="output" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="alg-u2-cJP">
-                                <rect key="frame" x="16" y="376" width="343" height="85"/>
-                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="85" id="uby-OT-knU"/>
+                                    <constraint firstAttribute="height" constant="151" id="FQ3-Gw-bPi"/>
                                 </constraints>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                             </textView>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="jht-mS-cYx">
-                                <rect key="frame" x="16" y="248" width="62" height="30"/>
+                                <rect key="frame" x="16" y="272" width="51" height="30"/>
                                 <state key="normal" title="Update"/>
                                 <connections>
                                     <action selector="btnUpdate:" destination="BYZ-38-t0r" eventType="touchUpInside" id="YZ8-5N-MhL"/>
@@ -63,34 +47,34 @@
                                 <fontDescription key="fontDescription" type="system" weight="medium" pointSize="24"/>
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" text="output" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="CaR-hE-tHi">
+                                <rect key="frame" x="16" y="310" width="343" height="151"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
                         </subviews>
                         <color key="backgroundColor" red="0.90196079019999997" green="0.90196079019999997" blue="0.90196079019999997" alpha="1" colorSpace="calibratedRGB"/>
                         <constraints>
-                            <constraint firstItem="ZLF-tc-P0l" firstAttribute="trailing" secondItem="CaR-hE-tHi" secondAttribute="trailing" id="1ZY-JP-Gbf"/>
-                            <constraint firstItem="jht-mS-cYx" firstAttribute="leading" secondItem="CaR-hE-tHi" secondAttribute="leading" id="4CC-pc-xXi"/>
-                            <constraint firstItem="ZLF-tc-P0l" firstAttribute="leading" secondItem="jht-mS-cYx" secondAttribute="leading" id="4Y2-U6-dSn"/>
-                            <constraint firstItem="ZLF-tc-P0l" firstAttribute="top" secondItem="UA2-nN-TK9" secondAttribute="bottom" constant="8" symbolic="YES" id="7Qh-OP-i7i"/>
-                            <constraint firstItem="alg-u2-cJP" firstAttribute="top" secondItem="CaR-hE-tHi" secondAttribute="bottom" constant="8" symbolic="YES" id="Cv7-HT-y6O"/>
-                            <constraint firstItem="baw-sH-KzB" firstAttribute="centerX" secondItem="ZLF-tc-P0l" secondAttribute="centerX" id="G86-TR-39r"/>
-                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="alg-u2-cJP" secondAttribute="bottom" constant="206" id="Hlb-Ev-wAB"/>
-                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="jht-mS-cYx" secondAttribute="trailing" constant="297" id="Kfn-HM-Iew"/>
-                            <constraint firstItem="CaR-hE-tHi" firstAttribute="trailing" secondItem="alg-u2-cJP" secondAttribute="trailing" id="O5H-NR-a4g"/>
-                            <constraint firstItem="UA2-nN-TK9" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" id="RDc-3H-34u"/>
-                            <constraint firstAttribute="trailing" secondItem="UA2-nN-TK9" secondAttribute="trailing" constant="165" id="SNh-Sf-oXk"/>
-                            <constraint firstItem="ZLF-tc-P0l" firstAttribute="trailing" secondItem="8bC-Xf-vdC" secondAttribute="trailingMargin" id="TRj-OZ-oJN"/>
-                            <constraint firstItem="baw-sH-KzB" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="9" id="WGf-UI-hZz"/>
-                            <constraint firstItem="CaR-hE-tHi" firstAttribute="leading" secondItem="alg-u2-cJP" secondAttribute="leading" id="XXk-Br-NuD"/>
-                            <constraint firstItem="CaR-hE-tHi" firstAttribute="top" secondItem="jht-mS-cYx" secondAttribute="bottom" constant="8" symbolic="YES" id="cfo-yj-dBk"/>
-                            <constraint firstItem="UA2-nN-TK9" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="ZLF-tc-P0l" secondAttribute="leading" id="lZQ-Us-fbC"/>
-                            <constraint firstItem="UA2-nN-TK9" firstAttribute="top" secondItem="baw-sH-KzB" secondAttribute="bottom" constant="22" id="pHo-O6-D9j"/>
-                            <constraint firstItem="jht-mS-cYx" firstAttribute="top" secondItem="ZLF-tc-P0l" secondAttribute="bottom" constant="8" symbolic="YES" id="rkX-5S-ZBH"/>
+                            <constraint firstItem="CaR-hE-tHi" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="16" id="AX5-qz-KNS"/>
+                            <constraint firstItem="ZLF-tc-P0l" firstAttribute="leading" secondItem="jht-mS-cYx" secondAttribute="leading" id="Em0-XW-9lP"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="ZLF-tc-P0l" secondAttribute="trailing" constant="16" id="Huu-jD-ciX"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="CaR-hE-tHi" secondAttribute="trailing" constant="16" id="OQD-M6-rVz"/>
+                            <constraint firstItem="ZLF-tc-P0l" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="16" id="RoA-6M-eiI"/>
+                            <constraint firstItem="baw-sH-KzB" firstAttribute="centerX" secondItem="ZLF-tc-P0l" secondAttribute="centerX" id="TAS-eF-lYW"/>
+                            <constraint firstItem="baw-sH-KzB" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="9" id="dNh-HI-wpO"/>
+                            <constraint firstItem="UA2-nN-TK9" firstAttribute="leading" secondItem="ZLF-tc-P0l" secondAttribute="leading" id="gCM-9r-Lfb"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="CaR-hE-tHi" secondAttribute="bottom" constant="206" id="nFQ-Gk-ALJ"/>
+                            <constraint firstItem="ZLF-tc-P0l" firstAttribute="top" secondItem="UA2-nN-TK9" secondAttribute="bottom" constant="8" symbolic="YES" id="sIo-zU-KHn"/>
+                            <constraint firstItem="jht-mS-cYx" firstAttribute="top" secondItem="ZLF-tc-P0l" secondAttribute="bottom" constant="8" symbolic="YES" id="vMd-1o-fOe"/>
+                            <constraint firstItem="UA2-nN-TK9" firstAttribute="top" secondItem="baw-sH-KzB" secondAttribute="bottom" constant="22" id="wb4-xB-q0a"/>
+                            <constraint firstItem="CaR-hE-tHi" firstAttribute="top" secondItem="jht-mS-cYx" secondAttribute="bottom" constant="8" symbolic="YES" id="x2H-cW-WfL"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
                     <connections>
                         <outlet property="txtInput" destination="ZLF-tc-P0l" id="FTX-se-TQJ"/>
                         <outlet property="txtOutput" destination="CaR-hE-tHi" id="D1K-D3-QRG"/>
-                        <outlet property="txtOutput2" destination="alg-u2-cJP" id="W8V-to-WBR"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
