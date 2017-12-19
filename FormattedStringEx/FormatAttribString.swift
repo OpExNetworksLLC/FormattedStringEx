@@ -21,11 +21,6 @@ func formatLabel(string: String, title_color: UIColor, title_font_size: CGFloat,
     let substring1 = String(string[..<index])
     let substring2 = String(string[index...])
     
-    print("string:", string)
-    print("index: ",index)
-    print("line 1", substring1)
-    print("line 2", substring2)
-    
     let titleAttributes = [
         NSAttributedStringKey.foregroundColor: title_color,
         NSAttributedStringKey.font: UIFont.systemFont(ofSize: title_font_size, weight: title_font_weight)] as [NSAttributedStringKey : Any]
