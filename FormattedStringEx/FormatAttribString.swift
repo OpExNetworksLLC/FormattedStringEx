@@ -9,7 +9,7 @@
 import Foundation
 import UIKit
 
-func formatLabel(string: String, title_color: UIColor, title_font_size: CGFloat, title_font_weight: UIFont.Weight, subtitle_color: UIColor, subtitle_font_size: CGFloat) -> NSMutableAttributedString {
+func formatAttribString(string: String, title_color: UIColor, title_font_size: CGFloat, title_font_weight: UIFont.Weight, subtitle_color: UIColor, subtitle_font_size: CGFloat) -> NSMutableAttributedString {
     
     // If receiving a string value from UITextView, as in this example, we have to force insert the carriage
     // return since it sees the "\n" as just more characters instead of denoting a carriage return (CR). This

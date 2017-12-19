@@ -24,8 +24,8 @@ class ViewController: UIViewController {
     }
 
     @IBAction func btnUpdate(_ sender: Any) {
-        txtOutput.attributedText = formatLabel(string: txtInput.text, title_color: UIColor.gray, title_font_size: 17, title_font_weight: UIFont.Weight.bold, subtitle_color: UIColor.lightGray, subtitle_font_size: 13)
-        txtOutput2.attributedText = formatLabel(string: "Title\nSub Title", title_color: UIColor.gray, title_font_size: 17, title_font_weight: UIFont.Weight.bold, subtitle_color: UIColor.lightGray, subtitle_font_size: 13)
+        txtOutput.attributedText = formatAttribString(string: txtInput.text, title_color: UIColor.gray, title_font_size: 17, title_font_weight: UIFont.Weight.bold, subtitle_color: UIColor.lightGray, subtitle_font_size: 13)
+        txtOutput2.attributedText = formatAttribString(string: "Title\nSub Title", title_color: UIColor.gray, title_font_size: 17, title_font_weight: UIFont.Weight.bold, subtitle_color: UIColor.lightGray, subtitle_font_size: 13)
 
     }
     
