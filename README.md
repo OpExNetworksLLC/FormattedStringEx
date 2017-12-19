@@ -77,4 +77,3 @@ Screen shot of output:
 
 ![image](https://github.com/OpExNetworks/FormattedStringEx/blob/master/FormatAttribString%20Screen%20Shot.png)
 
-
