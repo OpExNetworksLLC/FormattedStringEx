@@ -75,5 +75,6 @@ The function:
 
 Screen shot of output:  
 
-![image](https://github.com/OpExNetworks/FormattedStringEx/blob/master/FormatAttribString%20Screen%20Shot.png)
+![image](https://github.com/OpExNetworks/FormattedStringEx/blob/master/FormatAttribString%20Screen%20Shot.png){:height="50%" width="50%"}
+
 
