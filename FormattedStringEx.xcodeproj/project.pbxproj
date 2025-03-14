@@ -13,6 +13,7 @@
 		6E4319AD1FB10A6200036D79 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6E4319AB1FB10A6200036D79 /* Main.storyboard */; };
 		6E4319AF1FB10A6200036D79 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 6E4319AE1FB10A6200036D79 /* Assets.xcassets */; };
 		6E4319B21FB10A6200036D79 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6E4319B01FB10A6200036D79 /* LaunchScreen.storyboard */; };
+		6EA39F442D84AE8C0053ED85 /* DEV_NOTES.md in Resources */ = {isa = PBXBuildFile; fileRef = 6EA39F432D84AE8C0053ED85 /* DEV_NOTES.md */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -43,6 +44,7 @@
 		6E4319B31FB10A6200036D79 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		6E4319B81FB10A6200036D79 /* FormattedStringExTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = FormattedStringExTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		6E4319C31FB10A6200036D79 /* FormattedStringExUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = FormattedStringExUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		6EA39F432D84AE8C0053ED85 /* DEV_NOTES.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = DEV_NOTES.md; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -73,6 +75,7 @@
 		6E43199B1FB10A6200036D79 = {
 			isa = PBXGroup;
 			children = (
+				6EA39F432D84AE8C0053ED85 /* DEV_NOTES.md */,
 				6E4319A61FB10A6200036D79 /* FormattedStringEx */,
 				6E4319A51FB10A6200036D79 /* Products */,
 			);
@@ -211,6 +214,7 @@
 			files = (
 				6E4319B21FB10A6200036D79 /* LaunchScreen.storyboard in Resources */,
 				6E4319AF1FB10A6200036D79 /* Assets.xcassets in Resources */,
+				6EA39F442D84AE8C0053ED85 /* DEV_NOTES.md in Resources */,
 				6E4319AD1FB10A6200036D79 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
